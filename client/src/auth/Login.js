@@ -24,7 +24,10 @@ class Login extends React.Component {
                 localStorage.setItem('username', this.state.username);
                 this.props.history.push('/jokes');
             })
-            .catch(err => console.log(err));
+            .catch(err => {
+                console.log(err)
+                alert('There was a problem logging in. Please check your username and password.')
+            });
     }
 
     render() {
