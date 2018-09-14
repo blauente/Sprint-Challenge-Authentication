@@ -1,3 +1,7 @@
+body {
+  background-color: bisque;
+}
+
 .App {
   text-align: center;
 }
@@ -29,4 +33,38 @@
 
 a {
   margin: 20px;
+}
+
+.jokeContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.jokeBox {
+  box-sizing: border-box;
+  width: 250px;
+  min-height: 250px;
+  border: 3px solid dodgerblue;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 10px 10px 20px;
+}
+
+.jokeBox .underline {
+  text-decoration: underline;
+}
+
+.jokeBox .bold {
+  font-weight: bold;
+  font-family: 'Caveat';
+  font-size: 30px;
+}
+.jokeBox .italic {
+  font-style: italic;
+  font-family: 'Caveat';
+  font-size: 25px;
 }

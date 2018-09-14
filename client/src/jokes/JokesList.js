@@ -37,15 +37,16 @@ class JokesList extends React.Component {
             return(
                 <div>
                     <h1>Jokes List</h1>
+                    <div className="jokeContainer">
                     {this.state.jokes.map(joke => 
-                        <div key={joke.setup}>
-                            <p>Joke ID: {joke.id}</p>
+                        <div key={joke.setup} className="jokeBox">
+                            <p className="underline">Joke ID: {joke.id}</p>
                             <p>Category: {joke.type}</p>
-                            <p>{joke.setup}</p>
-                            <p>{joke.punchline}</p>
-                            <hr/>
+                            <p className="bold">{joke.setup}</p>
+                            <p className="italic">{joke.punchline}</p>
                         </div>
                         )}
+                        </div>
                 </div>
             )
         } else {
